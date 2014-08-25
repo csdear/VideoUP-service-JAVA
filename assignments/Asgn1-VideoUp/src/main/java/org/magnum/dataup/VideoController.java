@@ -86,15 +86,15 @@ public class VideoController {
             @RequestParam("data") MultipartFile videoData,
             HttpServletResponse response)
             throws IOException {
-        VideoStatus ret = null;
+        VideoStatus status = null;
         Video v = videos.get(new Long(id));
         if (v != null) {
             InputStream in = videoData.getInputStream();
             VideoFileManager.get().saveVideoData(v, in);
-            ret = new VideoStatus(VideoState.READY);
+            status = new VideoStatus(VideoState.READY);
         } else
             response.setStatus(HttpServletResponse.SC_NOT_FOUND);
-        return ret;
+        return status;
     }
 
     // helper methods.
