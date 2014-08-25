@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/assignments/Asgn1-VideoUp/lib/mobilecloud.handin-1.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/assignments/Asgn1-VideoUp/lib/video.up.test-1.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
